@@ -11,17 +11,16 @@ elif fname != "":
 elif lname != "":
   print("No first name entered")
 else:
-  input("\nExiting...No first and last name entered!")
+  input("\n Exiting...No first and last name entered!")
   exit()
   
-print("2. Hello %s %s, welcome to POD workshop!"%(lname.upper(), fname.upper()))
-print("3. Hello {} {}, welcome to POD workshop!".format(lname.title(), fname.title()))
-print("4. Hello {1} {0}, welcome to POD workshop!".format(fname.swapcase(), lname.swapcase()))
+print("2. Hello %s %s, welcome to POD workshop!"%(lname.upper(), fname.upper()) )
+print("3. Hello {} {}, welcome to POD workshop!".format(lname.title(), fname.title()) )
+print("4. Hello {1} {0}, welcome to POD workshop!".format(fname.swapcase(), lname.swapcase()) )
 
-# function call to Greeting.py module
-from Greeting import hello
-name, count = hello(fname,lname)
+from Greeting import hello  # import Greeting.py module
+# function call to Greeting.py module : hello method
+name, count = hello(fname, lname)
 
 # print the returned values
 print(name, count)
-
