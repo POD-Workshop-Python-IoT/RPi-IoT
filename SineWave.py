@@ -1,13 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-x=np.arange(0,4*np.pi,0.1)	 #start, stop, step
-y=np.sin(x)
-z=np.cos(x)
+x = np.arange(0, 4*np.pi, 0.1)	 #start, stop, step
+y = np.sin(x)
+#z = np.cos(x)
 
-#plt.plot(x,y)
+plt.plot(x,y)
 #plt.plot(x,z)
-plt.plot(x,y,x,z)
+#plt.plot(x,y,x,z)
 
 plt.xlabel('x values from 0 to 4pi')  # string must be enclosed with quotes '  '
 plt.ylabel('sin(x) and cos(x)')
